@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BrujulaVoz</string>
+    <string name="orientando">Orientando:  </string>
+    <string name="porcentaje">Porcentaje de error:  </string>
+    <string name="introducePorcentaje">Debes introducir un valor entre [0-100] </string>
+    <string name="norte">Norte</string>
+    <string name="sur">Sur</string>
+    <string name="este">Este</string>
+    <string name="oeste">Oeste</string>
+    <string name="orden_incorrecta">Orden incorrecta</string>
+
+    <string-array name="coordenadas_array">
+        <item>Norte</item>
+        <item>Sur</item>
+        <item>Este</item>
+        <item>Oeste</item>
+    </string-array>
+</resources>

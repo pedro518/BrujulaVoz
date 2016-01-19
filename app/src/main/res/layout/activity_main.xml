@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pedroruiz.com.brujulavoz.MainActivity">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:id="@+id/flecha"
+        android:src="@drawable/arrow"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="115dp"
+        android:layout_height="133dp"
+        android:src="@drawable/ic_mic_white_24dp"
+        android:layout_row="4"
+        android:layout_column="5"
+        android:id="@+id/speak"
+        android:onClick="Escuchar"
+        android:layout_marginBottom="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="115dp"
+        android:layout_height="133dp"
+        android:id="@+id/send"
+        android:src="@drawable/ic_send_white_24dp"
+        android:onClick="Send"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignTop="@+id/porcentaje"
+        android:layout_alignStart="@+id/flecha" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/coordenadas"
+        android:src="@drawable/windrose"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orientando"
+        android:id="@+id/text"
+        android:textSize="20dp"
+        android:layout_below="@+id/coordenadas"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/porcentaje"
+        android:hint="[0-100]"
+        android:layout_alignTop="@+id/speak"
+        android:layout_toStartOf="@+id/flecha" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/spinner"
+        android:layout_above="@+id/porcentaje"
+        android:layout_alignParentStart="false" />
+
+
+</RelativeLayout>
