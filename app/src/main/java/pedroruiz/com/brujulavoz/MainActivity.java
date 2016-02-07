@@ -42,6 +42,7 @@ import java.util.ArrayList;
  * @author Pedro Antonio Ruiz Cuesta
  * @author Ignacio Martín Requena
  * Última modificación: 7/2/2016
+ *
  */
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener{
