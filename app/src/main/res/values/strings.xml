@@ -9,6 +9,7 @@
     <string name="este">Este</string>
     <string name="oeste">Oeste</string>
     <string name="orden_incorrecta">Orden incorrecta</string>
+    <string name="info">Modo de uso: ["Norte", "Sur", "Este", "Oeste"] [0-100 (nº entero)]. </string>
 
     <string-array name="coordenadas_array">
         <item>Norte</item>

@@ -16,6 +16,7 @@
 package pedroruiz.com.brujulavoz;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -41,7 +42,7 @@ import java.util.ArrayList;
  *
  * @author Pedro Antonio Ruiz Cuesta
  * @author Ignacio Martín Requena
- * Última modificación: 8/2/2016
+ * Última modificación: 9/2/2016
  *
  */
 
@@ -347,6 +348,16 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }else{
             Toast.makeText(getApplicationContext(), getText(R.string.introducePorcentaje), Toast.LENGTH_LONG).show();
         }
+    }
+
+    /**
+     * Muestra información de uso de la app
+     */
+    public void info(View view){
+        new AlertDialog.Builder(this)
+                .setMessage(R.string.info)
+                .setPositiveButton(android.R.string.ok, null)
+                .show();
     }
 
     /**
